@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site description">
+    
+    <link rel="shortcut icon" href="https://dcimee.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <link rel="canonical" href="https://dcimee.github.io/post/vim/" />
+    <title>Vim</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://dcimee.github.io/">Rectangular Drawer</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="/" title="posts">posts</a>
+            </li><li>
+                <a href="/about/" title="about">about</a>
+            </li><li>
+                <a href="/thoughts/" title="thoughts">thoughts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Vim</h1>
+        <div>
+                <time>March 6, 2023</time>
+            </div>
+    </header><p>Vim&rsquo;s Note</p>
+<h3 id="vims-configurateion-location-">Vim&rsquo;s Configurateion location :</h3>
+<blockquote>
+<p>~/.config/nvim/init.vim  (Unix and OSX)</p>
+</blockquote>
+<p>To make init.vim loaded with root user.</p>
+<p><em><code>$ cp $HOME/username/.config/nvim/init.vim /root/.config/nvim/</code></em></p>
+<h3 id="prerequisites-">PREREQUISITES :</h3>
+<p><code>nodejs, git, nvim, vim-plug</code></p>
+<p>&ldquo;echo $HOME&rdquo; to check the home directoray</p>
+<h3 id="mode">Mode</h3>
+<blockquote>
+<ul>
+<li>Normal - ESC</li>
+<li>Insert - &ldquo;k&rdquo; to insert before the block</li>
+<li>Visual - v on Normal mode</li>
+</ul>
+</blockquote>
+<h3 id="move">Move</h3>
+<blockquote>
+<ul>
+<li>&ldquo;n&rdquo; to go left</li>
+<li>&ldquo;i&rdquo; to go right</li>
+<li>&ldquo;e&rdquo; to go down</li>
+<li>&ldquo;u&rdquo; to go up</li>
+</ul>
+</blockquote>
+<h3 id="word-and-block-move">Word and Block Move</h3>
+<blockquote>
+<ul>
+<li>&ldquo;w&rdquo; to move to the next word</li>
+<li>&ldquo;b&rdquo; to move to the last word</li>
+<li>&ldquo;0&rdquo; to move to the first place on the line</li>
+<li>&ldquo;G&rdquo; to move to the last line, &ldquo;gg&rdquo; to the first line</li>
+<li>&ldquo;K&rdquo; go to the start of the line</li>
+<li>&ldquo;A&rdquo; go to the end of the line</li>
+</ul>
+</blockquote>
+<h3 id="write">Write</h3>
+<blockquote>
+<ul>
+<li>&ldquo;p&rdquo; to paste</li>
+<li>&ldquo;y&rdquo; to copy  <strong>(same command as &ldquo;d&rdquo; on &ldquo;)</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>&ldquo;k&rdquo; to insert</li>
+<li>&ldquo;S&rdquo; to save</li>
+<li>&ldquo;Q&rdquo; to quit,  <strong>[if you want to quit without save, then type &ldquo;:q!&rdquo; (&ldquo;ZZ&rdquo; for &ldquo;:q!&rdquo;)]</strong></li>
+<li>&ldquo;R&rdquo; to reload the $MYVIMRC file</li>
+</ul>
+</blockquote>
+<h3 id="delete">Delete</h3>
+<p><em>There is no delete in vim, all is cut and put things in clipboard</em></p>
+<blockquote>
+<ul>
+<li>&ldquo;x&rdquo; to delete the word on the cursor</li>
+<li>&ldquo;c&rdquo; to delete the word on the cursor and insert/edit on the current place.</li>
+<li>&ldquo;d&rdquo; to cut</li>
+<li>&ldquo;yk&rdquo;&rdquo; copy everything in &quot;&quot;</li>
+<li>&ldquo;ckw&rdquo; / change in word, in general</li>
+<li>&ldquo;ck&rsquo;x&rsquo;&rdquo; / change in &lsquo;x&rsquo;, for example `&quot;&rsquo; for&rsquo;x&rsquo;, then it will delete everything in &quot;&quot;</li>
+<li>&ldquo;dk&rdquo;&quot; delete everything in &quot;&quot;</li>
+</ul>
+</blockquote>
+<h3 id="operation-motion"><Operation> <Motion></h3>
+<blockquote>
+<ul>
+<li>&ldquo;d&rdquo; plus command,</li>
+<li>&ldquo;d&rdquo; plus/+ navigation, delete one word on the way it gave.</li>
+<li>&ldquo;d&rdquo; plus/+ &ldquo;number&rdquo; plus/+ navigation = delete &ldquo;num&rdquo; word on the direction</li>
+<li>double &ldquo;d&rdquo; to delete/cut the current line,</li>
+</ul>
+</blockquote>
+<h3 id="search">Search</h3>
+<blockquote>
+<ul>
+<li>Search on vim : &ldquo;/&rdquo;</li>
+<li>disable higlightSearch / :nohlsearch <strong>(space + enter)</strong></li>
+<li>&ldquo;f + &lsquo;x&rsquo;&rdquo; / &ldquo;fv&rdquo; to find the first word start with &ldquo;v&rdquo; on current line</li>
+<li>&ldquo;df:&rdquo; to delete till &ldquo;:&rdquo;, &ldquo;yf:&rdquo; to copy till &ldquo;:&rdquo; , and so on</li>
+</ul>
+</blockquote>
+<h3 id="split-screen">Split Screen</h3>
+<blockquote>
+<ul>
+<li>&ldquo;:split&rdquo; for vertical split, &ldquo;:q&rdquo;/Q to quit	<strong>(su, se)</strong></li>
+<li>&ldquo;:vsplit&rdquo; for horizontal split, &ldquo;q&rdquo;/Q to quit	<strong>(sn, si)</strong></li>
+<li>&ldquo;set splitright&rdquo; then &ldquo;vsplit&rdquo;, to move the cursor to the right side(&lt;LEADER + i/n&gt;)</li>
+<li>&ldquo;sh&rdquo; to transform vsplit to split. <strong>(up &amp; down)</strong></li>
+<li>&ldquo;sv&rdquo; to transform split to vsplit. <strong>(left &amp; right)</strong></li>
+</ul>
+</blockquote>
+<h3 id="visual-mode">Visual Mode</h3>
+<blockquote>
+<ul>
+<li>&ldquo;shift + v&rdquo; to select as line</li>
+<li>&ldquo;ctrl  + v&rdquo; to enter the &ldquo;Visual Block&rdquo; mode</li>
+<li>after select, press&quot;:&quot; the type [mode][command]  <strong>(:normal AfinsHere)</strong></li>
+<li>it would add &ldquo;finsHere&rdquo; in the end of every line selected<br>
+(after selected all words on block, press &ldquo;shift+k&rdquo; to insert, this change would apply to all block that have chosen)</li>
+</ul>
+</blockquote>
+<p><code>&lt;C-w&gt;l //Ctrl+w+l</code></p>
+<h3 id="new-page">New Page</h3>
+<blockquote>
+<ul>
+<li>&ldquo;:tabe&rdquo; <strong>(tu)</strong></li>
+<li>&ldquo;:-tabnext&rdquo; move left page  <strong>(tn)</strong></li>
+<li>&ldquo;:+tabnext&rdquo; move right page <strong>(ti)</strong></li>
+</ul>
+</blockquote>
+<h3 id="plugin">Plugin</h3>
+<blockquote>
+<ul>
+<li>call plugin#begin()</li>
+<li>Plugin &lsquo;{adress of the plugin/github(https)}&rsquo;  <strong>(git needed)</strong></li>
+<li>dall plugin#end()</li>
+</ul>
+</blockquote>
+<h3 id="cocnvim">COC.NVIM</h3>
+<p><em><code>Nodejs, vim-plug</code></em></p>
+<blockquote>
+<p>:help coc-nvim</p>
+</blockquote>
+<h3 id="misc">Misc.</h3>
+<blockquote>
+<ul>
+<li>:e ~/Desktop/a.py	<strong>(e for edit, to edit a file on vim)</strong></li>
+<li>:set spell!	 <strong>(to enable spelling mistake check)</strong></li>
+<li>,z=, to open possible correction</li>
+<li>:x, to save and exit</li>
+</ul>
+</blockquote>
+<p><em><code>set clipboard=unnamedplus</code></em> <strong>(to share the clipboard with system)</strong><br>
+<em><code>Nvim_terminal_emulator, :split term://bash or :tabnew term:</code></em> <strong>(bash)</strong></p>
+<p>To be expanded.</p>
+</article>
+
+        </main><footer id="footer">
+    Author : DCIMEE
+</footer>
+</body>
+</html>

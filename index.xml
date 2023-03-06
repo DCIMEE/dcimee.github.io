@@ -13,12 +13,13 @@
     
     
     <item>
-      <title>Vim&#39;s Note</title>
+      <title>Vim</title>
       <link>https://dcimee.github.io/post/vim/</link>
       <pubDate>Mon, 06 Mar 2023 22:54:17 +0800</pubDate>
       
       <guid>https://dcimee.github.io/post/vim/</guid>
-      <description>&lt;h3 id=&#34;vims-configurateion-location-&#34;&gt;Vim&amp;rsquo;s Configurateion location :&lt;/h3&gt;
+      <description>&lt;p&gt;Vim&amp;rsquo;s Note&lt;/p&gt;
+&lt;h3 id=&#34;vims-configurateion-location-&#34;&gt;Vim&amp;rsquo;s Configurateion location :&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;~/.config/nvim/init.vim  (Unix and OSX)&lt;/p&gt;
 &lt;/blockquote&gt;
