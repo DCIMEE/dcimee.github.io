@@ -12,6 +12,154 @@
     
     
     <item>
+      <title>Vim&#39;s Note</title>
+      <link>https://dcimee.github.io/post/vim/</link>
+      <pubDate>Mon, 06 Mar 2023 22:54:17 +0800</pubDate>
+      
+      <guid>https://dcimee.github.io/post/vim/</guid>
+      <description>&lt;h3 id=&#34;vims-configurateion-location-&#34;&gt;Vim&amp;rsquo;s Configurateion location :&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;~/.config/nvim/init.vim  (Unix and OSX)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To make init.vim loaded with root user.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;$ cp $HOME/username/.config/nvim/init.vim /root/.config/nvim/&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;prerequisites-&#34;&gt;PREREQUISITES :&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;nodejs, git, nvim, vim-plug&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;echo $HOME&amp;rdquo; to check the home directoray&lt;/p&gt;
+&lt;h3 id=&#34;mode&#34;&gt;Mode&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Normal - ESC&lt;/li&gt;
+&lt;li&gt;Insert - &amp;ldquo;k&amp;rdquo; to insert before the block&lt;/li&gt;
+&lt;li&gt;Visual - v on Normal mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;move&#34;&gt;Move&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;n&amp;rdquo; to go left&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;i&amp;rdquo; to go right&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;e&amp;rdquo; to go down&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;u&amp;rdquo; to go up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;word-and-block-move&#34;&gt;Word and Block Move&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;w&amp;rdquo; to move to the next word&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;b&amp;rdquo; to move to the last word&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;0&amp;rdquo; to move to the first place on the line&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;G&amp;rdquo; to move to the last line, &amp;ldquo;gg&amp;rdquo; to the first line&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;K&amp;rdquo; go to the start of the line&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;A&amp;rdquo; go to the end of the line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;write&#34;&gt;Write&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;p&amp;rdquo; to paste&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;y&amp;rdquo; to copy  &lt;strong&gt;(same command as &amp;ldquo;d&amp;rdquo; on &amp;ldquo;)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;k&amp;rdquo; to insert&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;S&amp;rdquo; to save&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Q&amp;rdquo; to quit,  &lt;strong&gt;[if you want to quit without save, then type &amp;ldquo;:q!&amp;rdquo; (&amp;ldquo;ZZ&amp;rdquo; for &amp;ldquo;:q!&amp;rdquo;)]&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;R&amp;rdquo; to reload the $MYVIMRC file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;delete&#34;&gt;Delete&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;There is no delete in vim, all is cut and put things in clipboard&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;x&amp;rdquo; to delete the word on the cursor&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;c&amp;rdquo; to delete the word on the cursor and insert/edit on the current place.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;d&amp;rdquo; to cut&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;yk&amp;rdquo;&amp;rdquo; copy everything in &amp;quot;&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;ckw&amp;rdquo; / change in word, in general&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;ck&amp;rsquo;x&amp;rsquo;&amp;rdquo; / change in &amp;lsquo;x&amp;rsquo;, for example `&amp;quot;&amp;rsquo; for&amp;rsquo;x&amp;rsquo;, then it will delete everything in &amp;quot;&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;dk&amp;rdquo;&amp;quot; delete everything in &amp;quot;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;operation-motion&#34;&gt;&lt;Operation&gt; &lt;Motion&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;d&amp;rdquo; plus command,&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;d&amp;rdquo; plus/+ navigation, delete one word on the way it gave.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;d&amp;rdquo; plus/+ &amp;ldquo;number&amp;rdquo; plus/+ navigation = delete &amp;ldquo;num&amp;rdquo; word on the direction&lt;/li&gt;
+&lt;li&gt;double &amp;ldquo;d&amp;rdquo; to delete/cut the current line,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;search&#34;&gt;Search&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Search on vim : &amp;ldquo;/&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;disable higlightSearch / :nohlsearch &lt;strong&gt;(space + enter)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;f + &amp;lsquo;x&amp;rsquo;&amp;rdquo; / &amp;ldquo;fv&amp;rdquo; to find the first word start with &amp;ldquo;v&amp;rdquo; on current line&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;df:&amp;rdquo; to delete till &amp;ldquo;:&amp;rdquo;, &amp;ldquo;yf:&amp;rdquo; to copy till &amp;ldquo;:&amp;rdquo; , and so on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;split-screen&#34;&gt;Split Screen&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;:split&amp;rdquo; for vertical split, &amp;ldquo;:q&amp;rdquo;/Q to quit	&lt;strong&gt;(su, se)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;:vsplit&amp;rdquo; for horizontal split, &amp;ldquo;q&amp;rdquo;/Q to quit	&lt;strong&gt;(sn, si)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;set splitright&amp;rdquo; then &amp;ldquo;vsplit&amp;rdquo;, to move the cursor to the right side(&amp;lt;LEADER + i/n&amp;gt;)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;sh&amp;rdquo; to transform vsplit to split. &lt;strong&gt;(up &amp;amp; down)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;sv&amp;rdquo; to transform split to vsplit. &lt;strong&gt;(left &amp;amp; right)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;visual-mode&#34;&gt;Visual Mode&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;shift + v&amp;rdquo; to select as line&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;ctrl  + v&amp;rdquo; to enter the &amp;ldquo;Visual Block&amp;rdquo; mode&lt;/li&gt;
+&lt;li&gt;after select, press&amp;quot;:&amp;quot; the type [mode][command]  &lt;strong&gt;(:normal AfinsHere)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;it would add &amp;ldquo;finsHere&amp;rdquo; in the end of every line selected&lt;br&gt;
+(after selected all words on block, press &amp;ldquo;shift+k&amp;rdquo; to insert, this change would apply to all block that have chosen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;C-w&amp;gt;l //Ctrl+w+l&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;new-page&#34;&gt;New Page&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;:tabe&amp;rdquo; &lt;strong&gt;(tu)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;:-tabnext&amp;rdquo; move left page  &lt;strong&gt;(tn)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;:+tabnext&amp;rdquo; move right page &lt;strong&gt;(ti)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;plugin&#34;&gt;Plugin&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;call plugin#begin()&lt;/li&gt;
+&lt;li&gt;Plugin &amp;lsquo;{adress of the plugin/github(https)}&amp;rsquo;  &lt;strong&gt;(git needed)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;dall plugin#end()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;cocnvim&#34;&gt;COC.NVIM&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;Nodejs, vim-plug&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;:help coc-nvim&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;misc&#34;&gt;Misc.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;:e ~/Desktop/a.py	&lt;strong&gt;(e for edit, to edit a file on vim)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;:set spell!	 &lt;strong&gt;(to enable spelling mistake check)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;,z=, to open possible correction&lt;/li&gt;
+&lt;li&gt;:x, to save and exit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;set clipboard=unnamedplus&lt;/code&gt;&lt;/em&gt; &lt;strong&gt;(to share the clipboard with system)&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;&lt;code&gt;Nvim_terminal_emulator, :split term://bash or :tabnew term:&lt;/code&gt;&lt;/em&gt; &lt;strong&gt;(bash)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To be expanded.&lt;/p&gt;
+</description>
+    </item>
+    
+    
+    
+    <item>
       <title>Setting Up</title>
       <link>https://dcimee.github.io/post/setting-up/</link>
       <pubDate>Mon, 06 Mar 2023 21:07:20 +0800</pubDate>
