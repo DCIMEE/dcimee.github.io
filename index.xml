@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rectangular Drawer</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Rectangular Drawer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Mar 2023 09:21:58 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>http://example.org/post/hello/</link>
+      <pubDate>Mon, 06 Mar 2023 09:21:58 +0800</pubDate>
+      
+      <guid>http://example.org/post/hello/</guid>
+      <description>&lt;p&gt;No &amp;ldquo;Hello World&amp;rdquo; absolutely, because why would i?&lt;/p&gt;
+&lt;p&gt;I am also not good at greeting, guess you already can see.&lt;/p&gt;
+</description>
+    </item>
+    
+    
+  </channel>
+</rss>
