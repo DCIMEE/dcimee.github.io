@@ -2,25 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rectangular Drawer</title>
-    <link>http://example.org/categories/</link>
+    <link>https://dcimee.github.io/categories/</link>
     <description>Recent content in Categories on Rectangular Drawer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dcimee.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     
     
     <item>
-      <title>Hello</title>
-      <link>http://example.org/post/hello/</link>
+      <title>init</title>
+      <link>https://dcimee.github.io/post/init/</link>
       <pubDate>Mon, 06 Mar 2023 09:21:58 +0800</pubDate>
       
-      <guid>http://example.org/post/hello/</guid>
-      <description>&lt;p&gt;No &amp;ldquo;Hello World&amp;rdquo; absolutely, because why would i?&lt;/p&gt;
-&lt;p&gt;I am also not good at greeting, guess you already can see.&lt;/p&gt;
+      <guid>https://dcimee.github.io/post/init/</guid>
+      <description>&lt;p&gt;nothing here.&lt;/p&gt;
 </description>
     </item>
     
