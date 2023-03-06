@@ -6,9 +6,56 @@
     <description>Recent content in Posts on Rectangular Drawer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 06 Mar 2023 09:21:58 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Mar 2023 21:07:20 +0800</lastBuildDate>
     
 	<atom:link href="https://dcimee.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Setting Up</title>
+      <link>https://dcimee.github.io/post/setting-up/</link>
+      <pubDate>Mon, 06 Mar 2023 21:07:20 +0800</pubDate>
+      
+      <guid>https://dcimee.github.io/post/setting-up/</guid>
+      <description>&lt;p&gt;Something about how i build up this site&lt;/p&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;git&lt;/li&gt;
+&lt;li&gt;hugo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I would probably say only these two are neccessary&lt;/p&gt;
+&lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
+&lt;p&gt;So first go into a directory where you want to put your site files at
+then run the command&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;hugo new site &amp;quot;sitename&amp;quot;&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and, clone whatever theme you like to the directory called &lt;em&gt;&lt;code&gt;theme&lt;/code&gt;&lt;/em&gt; (You could find out on hugo&amp;rsquo;s website or somewhere else on the internet.)&lt;/p&gt;
+&lt;p&gt;Edit the file called &lt;em&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/em&gt;, i just simply copy the &lt;em&gt;&lt;a href=&#34;https://github.com/LukasJoswiak/etch/wiki/Configuration&#34;&gt;Sample Configuration&lt;/a&gt;&lt;/em&gt;. from the theme&amp;rsquo;s wiki.&lt;/p&gt;
+&lt;p&gt;then, run&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;under your siet&amp;rsquo;s root directory to genarate your site, the files would be at &lt;em&gt;&lt;code&gt;./public&lt;/code&gt;&lt;/em&gt; directory (don&amp;rsquo;t forget to run this command everytime after you make changes or add new contents.)&lt;/p&gt;
+&lt;p&gt;Also I have put this site on github page, you can see it by the domain. so what i did is create a repository with &lt;em&gt;&amp;ldquo;xxx.github.io&amp;rdquo;&lt;/em&gt; as it&amp;rsquo;s name, it seems only by doing that can you use github page feature. (you may also need to enable this feature on repo&amp;rsquo;s setting.)&lt;/p&gt;
+&lt;p&gt;then run&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;git init&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;under the &lt;em&gt;&lt;code&gt;public&lt;/code&gt;&lt;/em&gt; directory since thoes files in it are all you need.&lt;/p&gt;
+&lt;p&gt;run&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;hugo server&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;to check the website changes in realtime, i do edit on WSL, the default server address it given just not works for me, so what i run is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;hugo server --bind WSLIP --baseURL=http://WSLIP --noHTTPCache&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(You can get the WSLIP by using the command &lt;em&gt;&lt;code&gt;ip a&lt;/code&gt;&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;I guess you are already smart enough for figuring out what to do next, so that&amp;rsquo;s all.&lt;/p&gt;
+</description>
+    </item>
     
     
     

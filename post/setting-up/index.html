@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site description">
+    
+    <link rel="shortcut icon" href="https://dcimee.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <link rel="canonical" href="https://dcimee.github.io/post/setting-up/" />
+    <title>Setting Up</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://dcimee.github.io/">Rectangular Drawer</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="/" title="posts">posts</a>
+            </li><li>
+                <a href="/about/" title="about">about</a>
+            </li><li>
+                <a href="/thoughts/" title="thoughts">thoughts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Setting Up</h1>
+        <div>
+                <time>March 6, 2023</time>
+            </div>
+    </header><p>Something about how i build up this site</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>git</li>
+<li>hugo</li>
+</ul>
+<p>I would probably say only these two are neccessary</p>
+<h3 id="content">Content</h3>
+<p>So first go into a directory where you want to put your site files at
+then run the command</p>
+<blockquote>
+<p><em><code>hugo new site &quot;sitename&quot;</code></em></p>
+</blockquote>
+<p>and, clone whatever theme you like to the directory called <em><code>theme</code></em> (You could find out on hugo&rsquo;s website or somewhere else on the internet.)</p>
+<p>Edit the file called <em><code>config.toml</code></em>, i just simply copy the <em><a href="https://github.com/LukasJoswiak/etch/wiki/Configuration">Sample Configuration</a></em>. from the theme&rsquo;s wiki.</p>
+<p>then, run</p>
+<blockquote>
+<p><em><code>hugo</code></em></p>
+</blockquote>
+<p>under your siet&rsquo;s root directory to genarate your site, the files would be at <em><code>./public</code></em> directory (don&rsquo;t forget to run this command everytime after you make changes or add new contents.)</p>
+<p>Also I have put this site on github page, you can see it by the domain. so what i did is create a repository with <em>&ldquo;xxx.github.io&rdquo;</em> as it&rsquo;s name, it seems only by doing that can you use github page feature. (you may also need to enable this feature on repo&rsquo;s setting.)</p>
+<p>then run</p>
+<blockquote>
+<p><em><code>git init</code></em></p>
+</blockquote>
+<p>under the <em><code>public</code></em> directory since thoes files in it are all you need.</p>
+<p>run</p>
+<blockquote>
+<p><em><code>hugo server</code></em></p>
+</blockquote>
+<p>to check the website changes in realtime, i do edit on WSL, the default server address it given just not works for me, so what i run is</p>
+<blockquote>
+<p><em><code>hugo server --bind WSLIP --baseURL=http://WSLIP --noHTTPCache</code></em></p>
+</blockquote>
+<p>(You can get the WSLIP by using the command <em><code>ip a</code></em>)</p>
+<p>I guess you are already smart enough for figuring out what to do next, so that&rsquo;s all.</p>
+</article>
+
+        </main><footer id="footer">
+    Author : DCIMEE
+</footer>
+</body>
+</html>
