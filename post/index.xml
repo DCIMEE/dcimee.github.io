@@ -52,8 +52,11 @@ then run the command&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;code&gt;hugo server --bind WSLIP --baseURL=http://WSLIP --noHTTPCache&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;(You can get the WSLIP by using the command &lt;em&gt;&lt;code&gt;ip a&lt;/code&gt;&lt;/em&gt;)&lt;/p&gt;
-&lt;p&gt;I guess you are already smart enough for figuring out what to do next, so that&amp;rsquo;s all.&lt;/p&gt;
+&lt;p&gt;(You can get the WSLIP by using the command below)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;ip a&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Next you just need to do git push, which i won&amp;rsquo;t talk about here, so that&amp;rsquo;s all.&lt;/p&gt;
 </description>
     </item>
     
